@@ -1,0 +1,18 @@
+<view class="order-address" bindtap="handleToAddressLsit">
+  <view class="top">
+    <text  wx:if="{{orderAddress.defaultAddress==1}}"class="top-df">默认</text>
+    <text>{{orderAddress.regional==null?'':orderAddress.regional}}</text>
+  </view>
+  <view class="context">
+    <view class="context-text">
+      {{orderAddress.detailedAddress==null?'点击添加地址':orderAddress.detailedAddress}}
+    </view>
+    <view class="context-icon">
+       <image src="/assets/images/common/arrow-right-o.png" />
+    </view>
+  </view>
+  <view class="up"> 
+    <text> {{orderAddress.consignee==null?'':orderAddress.consignee}}</text>
+    <text>{{orderAddress.phone==null?'':orderAddress.phone}}</text>
+  </view>
+</view>

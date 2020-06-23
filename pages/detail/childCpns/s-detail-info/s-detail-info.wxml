@@ -1,0 +1,17 @@
+
+<view class="detail-info">
+  <view class="info-hd"> 
+    <view class="star"></view>
+    <view class="hd-ct">{{detailInfo.desc}}</view>
+    <view class="end"></view>
+  </view>
+  <view class="info-ct">
+    <block wx:for="{{detailInfo.detailImage}}" 
+           wx:for-item="outerItem"
+           wx:for-index="outerIndex"
+           wx:key="outerIndex">
+      <view class="ct-text">{{outerItem.key}}</view>
+      <image class="ct-image" src="{{item}}" wx:for="{{outerItem.list}}" wx:key="index" model="widthFix"/>
+    </block>
+  </view>
+</view>

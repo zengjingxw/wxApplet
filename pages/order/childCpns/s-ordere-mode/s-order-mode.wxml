@@ -1,0 +1,13 @@
+<view class="order-mode">
+  <view class="mode-items">
+    <view class="mode-item">
+      <text>发票</text>
+      <text>无</text>
+    </view>
+
+    <view class="mode-item">
+      <text>支付方式</text>
+      <text>微信支付</text>
+    </view>
+  </view>
+</view>

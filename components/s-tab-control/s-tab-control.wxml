@@ -1,0 +1,6 @@
+<!--components/s-tab-control/s-tab-control.wxml-->
+<view class="tab-control snas-css">
+  <view bind:tap="handleTabClick" data-index="{{index}}" class="control-item {{currentIndex == index ?'atvice':''}}"  wx:key="item" wx:for="{{titles}}">
+    <text>{{item}}</text>
+  </view>
+</view>

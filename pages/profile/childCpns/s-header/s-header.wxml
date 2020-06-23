@@ -1,0 +1,15 @@
+<view class='header'>
+  <view class='avatar'>
+    <image src="{{userShowSign===0?'/assets/images/profile/avatar.png':userData.avatarUrl }}" />
+  </view>
+  <view class='login-info'>
+    <view class='login' wx:if="{{userShowSign!=0}}">{{userData.nickName}}</view>
+    <button class="login-button" open-type="getUserInfo" bindgetuserinfo="getUserInfo" wx:if="{{userShowSign === 0}}">登录/注册</button>
+    <view class='phone'>
+      <image src="/assets/images/profile/phone.png" /> 暂无绑定手机号
+    </view>
+  </view>
+  <view class='arrow'>
+    <image src="/assets/images/common/arrow-right.png" />
+  </view>
+</view>

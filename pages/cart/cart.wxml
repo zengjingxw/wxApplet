@@ -1,0 +1,37 @@
+<view class='cart'>
+  <block wx:if="{{cartList.length==0?false:true}}">
+
+    <scroll-view class='cart-list' scroll-y>
+      <block wx:for="{{cartList}}" wx:key="index">
+        <s-cart-item goods="{{item}}" bind:onCheckClick="onCheckClick" index="{{index}}" />
+      </block>
+    </scroll-view>
+
+    <s-cart-bar 
+      selected="{{isSelectAll}}" 
+      price="{{totalPrice}}" 
+      counter="{{totalCounter}}" 
+      bind:allClick="onSelectAll" 
+      bind:toCom="toCom" />
+
+  </block>
+  <block wx:else>
+    <view class="nullCart">
+       <text>别</text>
+       <text>看</text>
+       <text>了</text>
+       <text>购</text>
+       <text>物</text>
+       <text>车</text>
+       <text>啥</text>
+       <text>都</text>
+       <text>没</text>
+       <text>有</text>
+       <text>.</text>
+       <text>.</text>
+       <text>.</text>
+       <text>.</text>
+       <text>.</text>
+    </view>
+  </block>
+</view>

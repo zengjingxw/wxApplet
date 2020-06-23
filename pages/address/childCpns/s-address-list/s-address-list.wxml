@@ -1,0 +1,14 @@
+<view class="address-list">
+  <view>
+    <block wx:for="{{addressList}}" wx:key="index">
+      <view class="item-warp">
+        <address-list-item addressItem="{{item}}" />
+      </view>
+    </block>
+  </view>
+
+  <view class="address-list-bootom" bindtap="handleSaveAddress">
+    <text>新增收货地址</text>
+  </view>
+
+</view>

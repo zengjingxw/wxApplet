@@ -1,0 +1,19 @@
+<!--pages/detail/detail.wxml-->
+<view class="detail">
+  <scroll-view 
+    class="detaill-scroll" 
+    scroll-y 
+    scroll-with-animation="{{true}}" 
+    scroll-top="{{ showScrollTop }}"
+    bindscroll="scrollPosition" >
+    <s-swiper lists="{{detaBanner}}" the-swiper="detail-swiper" />
+    <s-detail-baseinfo baserInfo = "{{baseGoodsInfro}}"/> 
+    <s-shopinfo shopInfo = "{{shopInfo}}"/>
+    <s-info detailInfo = "{{detailInfo}}"/>
+    <s-params-info paramsInfo = "{{paramInfo}}"/>
+    <s-comment commentList = "{{commnet}}"/>
+    <s-recommend-info recommendInfo = "{{detaRecommentd}}"/>
+     <s-back-top  the-back-top="detail-back-top" bindtap="onBackTop" wx:if="{{ isShowBack }}" />
+  </scroll-view>
+  <s-detail-bottom-bar bind:addcart="addcart" bind:toPay="handlePay"/>
+</view>

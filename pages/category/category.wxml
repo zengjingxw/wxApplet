@@ -1,0 +1,11 @@
+
+<view class="cate">
+  <s-cate-manu 
+    class="cate-menu" 
+    cataMenuList = "{{categories}}"
+    bind:menuItemClick="menuItemClick"/>
+    <s-cate-content
+      class="cate-content" 
+      subcategories="{{categoryData[currentIndex].subcategories}}"
+      categoryDetail="{{categoryData[currentIndex].categoryDetail}}"/>
+</view>

@@ -1,0 +1,24 @@
+/* pages/detail/detail.wxss */
+page {
+  width: 100%;
+  height: 100%;
+}
+
+.detail-back-top {
+  bottom: 133rpx !important;
+}
+
+.detail {
+  width: 100%;
+  height: 100%;
+}
+
+.detaill-scroll {
+  width: 100%;
+  height: calc(100% - 120rpx);
+}
+
+.detail-swiper {
+  width: 100%;
+  height: 600rpx !important;
+}

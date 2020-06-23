@@ -1,0 +1,8 @@
+<view class="address-list">
+  <scroll-view
+    scroll-y>
+    
+   <address-item addressList="{{addressList}}"/>
+  
+  </scroll-view>
+</view>

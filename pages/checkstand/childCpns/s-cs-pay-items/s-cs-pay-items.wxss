@@ -1,0 +1,9 @@
+
+.cs-way {
+  width: 100%;
+  height: auto;
+  margin-top: 30rpx;
+  padding: 0rpx 20rpx;
+  box-sizing: border-box;
+}
+

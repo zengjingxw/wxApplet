@@ -1,0 +1,17 @@
+<!--pages/home/home.wxml-->
+<view class="home">
+  <scroll-view class="h-scroll" 
+                scroll-y 
+                bindscroll="scrollPosition" 
+                scroll-top="{{ showScrollTop }}" 
+                scroll-with-animation="true"
+                 bindscrolltolower="loadMore">
+    <s-swiper lists="{{ banners }}" />
+    <s-recommend recommendLists="{{ recommend }}" bind:loadImg="loadImg" />
+    <s-popular/>
+      <s-tab-control titles="{{titles}}" id="s-controller" class="{{isShowControl ?'activeFixle':'noActiveFixle'}}" bind:handleTabClcik="handleTabClcik"/>
+    <s-tab-control titles="{{titles}}" id="s-controller1" bind:handleTabClcik="handleTabClcik" />
+    <s-goods godosList="{{goods[currentType].lists}}" />
+    <s-back-top bindtap="onBackTop" wx:if="{{ isShowBack }}" />
+  </scroll-view>
+</view>

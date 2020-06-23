@@ -1,0 +1,25 @@
+<view class="params-info">
+  <view class="{{paramsInfo.imag?'':'arg-image'}}">
+    <image class="p-img" src="{{paramsInfo.imag}}" mode="widthFix" />
+  </view>
+  <view class="top">
+    <block wx:for="{{paramsInfo.sizes}}" wx:for-item="outerItem" wx:for-index="outerIndex" wx:key="outerIndex">
+      <view class="top-items" wx:for="{{outerItem}}" wx:key="index">
+        <block wx:for="{{item}}" wx:key="index">
+          <view class="item">
+            {{item}}
+          </view>
+        </block>
+      </view>
+    </block>
+  </view>
+
+  <view class="up">
+    <block wx:for="{{paramsInfo.infos}}" wx:key="index">
+      <view class="up-bd">
+        <view class="bd-key">{{item.key}}</view>
+        <view class="bd-value">{{item.value}}</view>
+      </view>
+    </block>
+  </view>
+</view>

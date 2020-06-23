@@ -1,0 +1,5 @@
+<view class="cs-way">
+  <block wx:for="{{payDataList}}" key="index">
+    <pay-item payWay="{{item}}" check="{{check}}" bind:handlePaySwicth="handlePaySwicth"/>
+  </block>
+</view>

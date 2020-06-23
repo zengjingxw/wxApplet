@@ -1,0 +1,15 @@
+<view class="order">
+  <scroll-view 
+    scroll-y 
+    >
+    <order-address orderAddress="{{defaultAddress}}"/>
+
+    <order-prod orderList="{{orderList}}"/>
+
+    <order-info tatolPrice="{{tatolPrice}}"/>
+
+    <order-mode/>
+  </scroll-view>
+  <order-bar tatolPrice="{{tatolPrice}}" bind:orderSub="handleSubOrder"/>
+
+</view>

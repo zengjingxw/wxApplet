@@ -1,0 +1,87 @@
+.address-list-itme {
+  box-sizing: border-box;
+  width: 100%;
+  height: 150rpx;
+  display: flex;
+  flex-direction: row;
+  border: 0px solid blue;
+  margin-bottom: 20rpx;
+}
+
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  height: 100%;
+}
+
+.right {
+  margin-left: 20rpx;
+  box-sizing: border-box;
+  flex: 1;
+  border: 0px solid red;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.right-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10rpx;
+  font-size: 30rpx;
+}
+
+.right-top  > text {
+  font-weight: bold;
+  margin-right: 100rpx;
+}
+
+.top-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.top-right > text {
+  font-size: 30rpx;
+}
+
+.top-right > .phone {
+  font-weight: bold;
+  margin-right: 20rpx;
+}
+
+.top-right > .defautlAddress {
+  font-size: 20rpx;
+  padding: 2rpx 10rpx;
+  border: 0px solid blue;
+  color: #ffffff;
+  background-color: red; 
+}
+
+/*============================================  */
+.right-up {
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+  border: 0px solid red;
+  align-items: center;
+}
+
+
+.right-up > text {
+  flex: 1;
+  font-size: 30rpx;
+}
+
+.right-up image {
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: 20rpx;
+}
+
+
+

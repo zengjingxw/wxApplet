@@ -1,0 +1,40 @@
+
+.pay-bar {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 8%;
+  border: 0px solid red;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.bar-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600rpx;
+  height: 60rpx;
+  color: #ffffff;
+  font-size: 30rpx;
+  background-color: red;
+  border-radius: 30rpx;
+}
+
+.bar-text {
+  margin-right: 10rpx;
+}
+
+.show-page-view {
+  width: 500rpx;
+  height: 400rpx;
+  position: fixed;
+  border: 1px solid red;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}

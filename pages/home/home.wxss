@@ -1,0 +1,18 @@
+.home {
+  width: 100%;
+  height: 100vh;
+}
+.h-scroll {
+  width: 100%;
+  height: 100%;
+}
+
+.activeFixle {
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+}
+.noActiveFixle {
+  display: none !important;
+}

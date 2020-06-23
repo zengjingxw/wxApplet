@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "address-item": "./childCpns/s-address-list/s-address-list"
+  },
+  "navigationBarTitleText": "地址列表"
+}

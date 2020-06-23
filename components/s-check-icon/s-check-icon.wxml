@@ -1,0 +1,5 @@
+
+<icon class='check-icon icon' 
+      type='success' size='{{bigNumber}}' 
+      style='border-color: {{isChecked ? select: "#aaa"}};' 
+      color='{{isChecked ? select: "#fff"}}'/>

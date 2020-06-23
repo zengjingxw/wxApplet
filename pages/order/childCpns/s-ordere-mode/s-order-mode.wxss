@@ -1,0 +1,28 @@
+/* pages/order/childCpns/s-ordere-mode/s-order-mode.wxss */
+
+.order-mode {
+  background-color: #ffffff;
+  border-radius: 15rpx;
+  padding: 20rpx 16rpx;
+  box-sizing: border-box;
+  margin-top: 25rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.mode-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.mode-item {
+  display: flex;
+  flex-direction: row;
+  font-size: 26rpx;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+
+
+

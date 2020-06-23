@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "order-address": "./childCpns/order-address/order-address",
+    "order-prod": "./childCpns/s-order-prod/s-order-prod",
+    "order-info": "./childCpns/s-order-info/s-order-info",
+    "order-mode": "./childCpns/s-ordere-mode/s-order-mode",
+    "order-bar": "./childCpns/s-order-bootom-bar/s-order-bootom-bar"
+  },
+  "navigationBarTitleText": "提交订单"
+}

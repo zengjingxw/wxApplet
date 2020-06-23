@@ -1,0 +1,73 @@
+
+.header {
+  position: relative;
+  display: flex;
+  background: #ff5777;
+  height: 170rpx;
+  padding: 12rpx 30rpx;
+  color: #fff;
+}
+
+.avatar image {
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 70rpx;
+  background: #f2f2f2;
+  vertical-align: middle;
+}
+
+.login-info {
+  vertical-align: middle;
+  margin-left: 30rpx;
+}
+
+.login-info .login {
+  font-size: 36rpx;
+  margin-top: 18rpx;
+}
+
+.login-info .login-button {
+  position: static;
+  background-color: transparent;
+  color: #ffffff;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: 0px solid red;
+  border-radius: 0rpx;
+  font-size: 36rpx;
+  width: 173rpx !important;
+  height: 63rpx !important;
+}
+
+.login-info .login-button::after {
+  width: 0;
+  height: 0;
+  border: none;
+  border-radius: 0;
+  padding: 0rpx !important;
+  margin: 0rpx !important;
+}
+
+.login-info .phone {
+  font-size: 28rpx;
+  margin-top: 10rpx;
+}
+
+.phone image {
+  width: 36rpx;
+  height: 36rpx;
+  vertical-align: middle;
+  position: relative;
+  bottom: 4rpx;
+}
+
+.arrow {
+  position: absolute;
+  right: 30rpx;
+  margin-top: 30rpx;
+}
+
+.arrow image {
+  width: 60rpx;
+  height: 60rpx;
+}

@@ -1,0 +1,16 @@
+<view class="order-prod">
+  <view class="prod-prods"> 
+    <block wx:for="{{orderList}}" wx:key="{{item.id}}">
+      <order-prod-item order-prod-item="order-prod-item" goods="{{item}}" showCheck="{{false}}"/>
+    </block>  
+  </view>
+  <view class="pord-othe">
+    <view class="pord-othe-courier">
+      <text>配送方式:</text>
+      <text>{{method}}</text>
+    </view>
+    <view class="pord-othe-data">
+      <text>{{dateinfo}}</text>
+    </view>
+  </view>
+</view>

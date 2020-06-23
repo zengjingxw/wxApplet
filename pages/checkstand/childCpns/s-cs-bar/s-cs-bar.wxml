@@ -1,0 +1,13 @@
+<view class="pay-bar" bindtap="handlePay">
+  <view class="bar-content">
+    <text class="bar-text">{{data.way}}</text>
+    <text>￥{{data.price}}</text>
+  </view>
+</view>
+
+<view class="show-page-view" wx:if="{{pview}}">
+  <text>{{data.way}}</text>
+  <view class="pay-input">
+    <input></input>
+  </view>
+</view>

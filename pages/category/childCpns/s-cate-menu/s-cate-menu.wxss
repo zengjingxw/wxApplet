@@ -1,0 +1,31 @@
+
+.c-menu {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #f6f6f6;
+}
+
+.menu-scroll {
+  width: 100%;
+  height: 100%;
+}
+
+.menu-item {
+  height: 100rpx;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-left: 6rpx solid transparent;
+  font-size: 26rpx;
+  color: #777777;
+}
+
+.active {
+  border-left: 6rpx solid #f55777;
+  color: #f55777;
+  background-color:#ffffff; 
+}

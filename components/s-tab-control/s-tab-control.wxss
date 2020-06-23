@@ -1,0 +1,28 @@
+/* components/s-tab-control/s-tab-control.wxss */
+
+.tab-control  {
+  box-sizing: border-box;
+  display: flex;
+  height: 88rpx;
+  border: 0px solid red;
+  background-color: #ffff;
+  align-items: center;
+  padding-bottom: 16rpx;
+}
+
+.control-item {
+  box-sizing: border-box;
+  flex: 1;
+  text-align: center
+}
+
+.atvice {
+  box-sizing: border-box;
+  color: red
+}
+
+.atvice text {
+  box-sizing: border-box;
+  padding: 20rpx;
+  border-bottom: 6rpx solid red;
+}

@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "order-prod-item": "../../../cart/childCpns/s-cart-items/s-cart-items"
+  }
+}

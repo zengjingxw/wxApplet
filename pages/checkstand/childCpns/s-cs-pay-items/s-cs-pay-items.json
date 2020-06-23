@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "pay-item": "../s-cs-item/s-cs-item"
+  }
+}

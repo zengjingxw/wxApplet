@@ -1,0 +1,27 @@
+<wxs src="../../../../common/dataformat.wxs" module="format"></wxs>
+<view class="comment">
+  <view class="com-hd">
+    <text class="text">用户评价</text>
+    <text class="text">更多</text>
+  </view>
+  <view class="com-bd">
+    <view class="bd-hd">
+      <image class="hd-img" src="{{commentList.user.avatar}}"/>
+      <text class="hd-text">{{commentList.user.uname}}</text>
+    </view>
+    <view class="bd-con">
+      {{commentList.content}}
+    </view>
+    <view class="bd-footer">
+      <view class="footer-hd">
+        <text class="date">{{format.dateFormat(commentList.created)}}</text>
+        <text class="style">{{commentList.style}}</text>
+      </view>
+      <view class="footer-img">
+        <block wx:for="{{commentList.images}}" wx:key="index">
+          <image class="f-img" src="{{item}}"/>
+        </block>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,32 @@
+<view class="detail-baseInfo">
+  <view class="des">
+    {{baserInfo.title}}
+  </view>
+  <view class="price">
+    <view class="new-price">
+      {{baserInfo.newPrice}}
+    </view>
+    <view class="old-price">
+      {{baserInfo.oldPrice}}
+
+    </view>
+    <view class="discount">
+      {{baserInfo.discount}}
+    </view>
+  </view>
+  <view class="message">
+    <block wx:for="{{baserInfo.columns}}" wx:key="index">
+      <view class="message-item">
+        {{item}}
+      </view>
+    </block>
+  </view>
+  <view class="cash">
+    <block wx:for="{{baserInfo.services}}" wx:key="index">
+      <view class="cash-item">
+        <image class="cash-icon" src="{{item.icon || ''}}" />
+        <text class="cash-text">{{item.name}}</text>
+      </view>
+    </block>
+  </view>
+</view>

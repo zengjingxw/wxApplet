@@ -1,0 +1,26 @@
+
+.h-recommend {
+  margin-top: 30rpx;
+  display: flex;
+  border-bottom: 20rpx solid #eeeeee;
+  align-items: center;
+  padding-bottom: 40rpx;
+}
+
+.recommend-item {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.recommend-item image {
+  width: 160rpx;
+  height: 160rpx;
+  margin-bottom: 20rpx;
+}
+
+.recommend-item text {
+  font-size: 33rpx;
+  opacity: 0.5;
+}

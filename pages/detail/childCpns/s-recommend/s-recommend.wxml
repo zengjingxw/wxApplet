@@ -1,0 +1,7 @@
+
+<view class="recommend">
+  <view class="rec-title">
+    商品推荐
+  </view>
+  <s-goods godosList="{{recommendInfo}}"/>
+</view>

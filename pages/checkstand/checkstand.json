@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+  
+    "pay-price": "./childCpns/s-cs-price/s-cs-price",
+    "pay-list": "./childCpns/s-cs-pay-items/s-cs-pay-items",
+    "pay-bar": "./childCpns/s-cs-bar/s-cs-bar"
+  }
+}

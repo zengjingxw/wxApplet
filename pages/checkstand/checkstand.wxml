@@ -1,0 +1,8 @@
+<view class="checkStand">
+  
+  <pay-price price="{{price}}"/>
+  
+  <pay-list payDataList="{{payData}}" bind:handleBarSwicth="handleBarSwicth"/>
+
+  <pay-bar data="{{barData}}" bind:handleOrder="handleOrder"/>
+</view>

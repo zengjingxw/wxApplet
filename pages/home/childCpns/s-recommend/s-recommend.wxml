@@ -1,0 +1,8 @@
+<view class="h-recommend">
+  <block wx:for="{{recommendLists}}" wx:key="index">
+      <view class="recommend-item">
+      <image src="{{item.image}}" bindload="imageLoad"/>
+      <text>{{item.title}}</text>
+  </view>
+  </block>
+</view>

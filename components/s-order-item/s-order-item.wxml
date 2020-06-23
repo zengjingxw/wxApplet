@@ -1,0 +1,42 @@
+<view class="order-item">
+  <view class="o-top">
+    <view class="top-stop">
+      <image src="/assets/images/common/order.png"></image>
+      <text>京西</text>
+    </view>
+    <text class="top-status">{{orderList.showStatus}}</text>
+  </view>
+
+  <view class="o-content">
+    <view class="items">
+
+      <block wx:if="{{orderList.wxOrderItems.length!= 1}}" >
+        <view class="item">
+          <block wx:for="{{orderList.wxOrderItems}}" wx:if="{{index <=2}}">
+                <image src="{{item.imageURL}}"></image>
+          </block>
+        </view>
+      </block>
+
+      <block wx:if="{{orderList.wxOrderItems.length == 1}}" wx:for="{{orderList.wxOrderItems}}">
+        <view class="oneItme">
+          <image src="{{item.imageURL}}"></image>
+          <text class="decs">{{item.title}}</text>
+        </view>
+      </block>
+
+      <view class="price-count">
+        <text class="price">￥{{orderList.totalPrice}}</text>
+        <text class="count">共{{orderList.totalCount}}件</text>
+      </view>
+
+    </view>
+  </view>
+  <view class="o-up">
+    <view></view>
+    <view class="btns">
+      <text>修改订单</text>
+      <text>查看发票</text>
+    </view>
+  </view>
+</view>

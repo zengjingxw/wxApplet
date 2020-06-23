@@ -1,0 +1,22 @@
+<view class="order-info">
+  <view class="order-info-items">
+    <view class="order-info-item">
+      <text>商品金额</text>
+      <text>￥{{tatolPrice}}</text>
+    </view>
+
+    <view class="order-info-item">
+      <text>运费</text>
+      <text>￥0</text>
+    </view>
+
+    <view class="order-info-item">
+      <text>优惠券</text>
+      <text>无</text>
+    </view>
+  </view>
+  <view class="order-info-price">
+    <text>合计</text>
+    <text>￥{{tatolPrice + freight}}</text>
+  </view>
+</view>

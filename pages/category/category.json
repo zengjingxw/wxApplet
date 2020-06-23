@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "s-cate-manu" : "./childCpns/s-cate-menu/s-cate-menu",
+    "s-cate-content" : "./childCpns/s-cate-content/s-cate-content"
+  }
+}

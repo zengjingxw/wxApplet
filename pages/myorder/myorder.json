@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "control-bar": "../../components/s-tab-control/s-tab-control",
+    "all": "./childCpns/s-mo-all/s-mo-all"
+  }
+}

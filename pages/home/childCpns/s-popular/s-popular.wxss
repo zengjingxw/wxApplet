@@ -1,0 +1,9 @@
+/* pages/home/childCpns/s-popular/s-popular.wxss */
+
+.h-pop {
+  width: 100%;
+}
+
+.h-pop image {
+  width: 100%;
+}

@@ -1,0 +1,15 @@
+<view class="all">
+  <scroll-view 
+    scroll-y>
+    <block wx:if="{{commonData.length !=0}}" wx:for="{{commonData}}" wx:key="index">
+       <view class="common-item">
+          <order-item orderList="{{item}}"/>
+       </view>
+    </block>
+    <block wx:if="{{commonData.length==0}}">
+      <view class="noData">
+        啥都没有
+      </view>
+    </block>
+  </scroll-view>
+</view>

@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "address-list-item": "./childCpns/s-address-item/s-address-item"
+  }
+}

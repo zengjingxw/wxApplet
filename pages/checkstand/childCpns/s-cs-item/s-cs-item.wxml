@@ -1,0 +1,7 @@
+  <view class="way-item">
+    <view class="item-body">
+      <image class="pay-icon" src="{{payWay.icon}}"></image>
+      <text class="pay-text">{{payWay.name}}</text>
+    </view>
+    <icon bigNumber="{{10}}" select="red" isChecked="{{check == payWay.signData ?true:false}}" bindtap="handleIcon" data-sign="{{payWay.signData}}" />
+  </view>

@@ -1,0 +1,6 @@
+  <view class="checkStand-price">
+    <text class="price-warp">
+      <text class="price-icon">￥</text>{{price}}
+    </text>
+  </view>
+

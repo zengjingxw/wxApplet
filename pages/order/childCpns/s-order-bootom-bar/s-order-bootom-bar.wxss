@@ -1,0 +1,42 @@
+.order-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 8%;
+  position: fixed;
+  bottom: 0rpx;
+  left: 0rpx;
+  right: 0rpx;
+  box-sizing: border-box;
+  padding: 0rpx 16rpx;
+  background-color: #ffffff; 
+  border: 0px solid red;
+  border-top: 1px solid #cccccc;
+}
+
+.bar-context {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.bar-context text:first-child {
+  font-weight: bold;
+  color: red;
+}
+
+.bar-context text:last-child {
+  border-radius: 50rpx;
+  padding: 20rpx 35rpx;
+  background-color: red;
+  font-size: 30rpx;
+  display: flex;
+  color: #ffffff;
+  justify-content: center;
+  align-items: center;
+}

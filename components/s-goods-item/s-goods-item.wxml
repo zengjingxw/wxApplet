@@ -1,0 +1,14 @@
+<!--components/s-goods-item/s-goods-item.wxml-->
+<view class="goods-item" bindtap="goodsItemClick">
+  <image class="images" lazy-load src="{{goodsItem.image || goodsItem.img || goodsItem.show.img}}"/>
+  <view class="item-bd">
+    <view class="text">
+      {{goodsItem.title}}
+    </view>
+    <view class="price-or-collect">
+      <text class="price">¥{{goodsItem.price}}</text> 
+      <image class='icon' src="/assets/images/common/favor.png"/>
+      <text class="collect">{{goodsItem.cfav}}</text>      
+    </view>
+  </view>
+</view>

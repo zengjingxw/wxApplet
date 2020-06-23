@@ -1,0 +1,21 @@
+
+<view class="cate-content">
+  <scroll-view
+    class="ct-scroll"
+    scroll-y>
+
+    <view class="subcategory">
+      <block wx:for="{{subcategories}}" wx:key="index">
+        <view class="sub-item">
+          <image  class="sub-item-image" src="{{item.image}}" mode="widthFix"/>
+          <text class="sub-item-text">{{item.title}}</text>
+        </view>
+      </block>
+    </view>
+
+    <s-tab-control bind:handleTabClcik="handleTabClcik" titles = "{{title}}"/>
+    
+    <s-goods godosList = "{{categoryDetail[currentType].data}}"/>
+  
+  </scroll-view>
+</view>

@@ -1,0 +1,17 @@
+<view class="myorder">
+  <control-bar id="s-controller" snas-css="snas-css" titles="{{titles}}" bind:handleTabClcik="handleTabClcik"/>
+  <scroll-view class="myorder-scrollx" scroll-x="true" scroll-into-view="{{scrolleLeft}}" bindscroll="handleScrolle">
+    
+    <all commonData="{{all}}" id="one"/>
+
+    <all commonData="{{ofPay}}" id="two"/>
+
+    <all commonData="{{wait}}" id="three"/>
+
+    <all commonData="{{off}}" id="four"/>
+
+    <all commonData="{{motion}}" id="five"/>
+
+    
+  </scroll-view>
+</view>

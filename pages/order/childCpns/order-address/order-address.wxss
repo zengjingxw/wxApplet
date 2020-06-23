@@ -1,0 +1,75 @@
+/* pages/order/childCpns/order-address/order-address.wxss */
+
+.order-address {
+  width: 100%;
+  height: 22%;
+  padding: 25rpx 20rpx;
+  border: 0px solid red;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #ffffff;
+}
+
+
+.order-address .top {
+  font-size: 26rpx;
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.order-address .top text {
+  margin-right: 15rpx;
+}
+
+.order-address .top .top-df {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+  color: #ffffff;
+  background-color: red;
+  font-size: 20rpx;
+  padding: 3rpx 3rpx;
+  border: 0px solid red;
+}
+
+.order-address .context {
+  display: flex;
+  flex-direction: row;
+  font-size: 35rpx;
+  font-weight: bold;
+  margin: 20rpx 0rpx;
+}
+
+.order-address .context .context-text {
+  flex: 1;
+  height: 100%;
+}
+
+.order-address .context .context-icon {
+  width: 10%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin-left: 30rpx;
+  
+}
+
+.order-address .context .context-icon image {
+  width: 40rpx;
+  height: 40rpx;
+  border: 0px solid red;
+}
+
+.order-address .up {
+  font-size: 26rpx;
+}
+
+.order-address .up text {
+  margin-right: 10rpx;
+}

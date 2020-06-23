@@ -1,0 +1,61 @@
+<view class="add-address">
+  <form class="add-from" bindsubmit="saveHandleFrom">
+
+    <view class="add-body">
+      <view class="s-from-item">
+        <text class="sf-text">收件人</text>
+        <input 
+          name="consignee" 
+          type="text" 
+          value="{{edit.consignee}}"
+          placeholder-style="font-size:13px;" 
+          placeholder="请填写收货人的名称"></input>
+      </view>
+
+      <view class="s-from-item">
+        <text class="sf-text">电话号码</text>
+        <input 
+          name="phone" 
+          type="text" 
+          value="{{edit.phone}}"
+          placeholder-style="font-size:13px;" 
+          placeholder="请填写电话号码"></input>
+      </view>
+
+      <view class="s-from-item">
+        <text class="sf-text">所在地区</text>
+        <picker mode="region" bindchange="bindRegionChange" value="{{region}}">
+          <view class="picker-select">
+            <text>{{region[0]}}</text>
+            <text>{{region[1]}}</text>
+            <text>{{region[2]}}</text>
+          </view>
+        </picker>
+      </view>
+
+      <view class="s-from-item">
+        <text class="sf-text">详细地址</text>
+        <input 
+          name="detailedAddress" 
+          type="text" 
+          value="{{edit.detailedAddress}}" 
+          placeholder-style="font-size:13px;" 
+          placeholder="街道、楼牌号等"></input>
+      </view>
+
+      <view class="s-from-item">
+        <text class="sf-text">设置为默认</text>
+        <switch 
+          checked="{{checkBox}}" 
+          bindchange="defaultChange"
+          color="red"/>
+      </view>
+    </view>
+    <view class="deleteAddress" wx:if="{{editSign}}">
+      <text bindtap="handleDeleteAddress">删除地址</text>
+    </view>
+    <view class="add-subbootom">
+      <button formType="submit">保存和使用</button>
+    </view>
+  </form>
+</view>

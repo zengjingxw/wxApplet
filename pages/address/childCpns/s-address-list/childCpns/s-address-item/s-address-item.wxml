@@ -1,0 +1,20 @@
+<view class="address-list-itme list-address-item" bindtap="handleSelectCurrent">
+  <block wx:if="{{addressItem.defaultAddress}}">
+    <view class="left">
+      <icon isChecked="{{addressItem.defaultAddress}}" bigNumber="14" select="red" class="icon" />
+    </view>
+  </block>
+  <view class="right">
+    <view class="right-top">
+      <text>{{addressItem.consignee}}</text>
+      <view class="top-right">
+        <text class="phone">{{addressItem.phone}}</text>
+        <text  class="defautlAddress" wx:if="{{addressItem.defaultAddress}}">默认</text>
+      </view>
+    </view>
+    <view class="right-up">
+      <text>{{addressItem.regional}} {{addressItem.detailedAddress}}</text>
+      <image catchtap="handleToAddressEdit" src="/assets/images/common/edit.png"></image>
+    </view>
+  </view>
+</view>

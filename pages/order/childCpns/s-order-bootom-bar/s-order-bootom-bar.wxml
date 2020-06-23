@@ -1,0 +1,6 @@
+<view class="order-bar">
+  <view class="bar-context">
+    <text>￥{{tatolPrice}}</text>
+    <text bindtap="handleClickSub">提交订单</text>
+  </view>
+</view>

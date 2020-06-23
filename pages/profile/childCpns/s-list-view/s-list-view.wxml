@@ -1,0 +1,10 @@
+
+<view class='list-view'>
+  <block wx:for="{{infos}}" wx:key="index">
+    <view class='list-item' bindtap="{{item.info=='我的订单'?'handleMyOrder':''}}">
+      <image src="/assets/images/profile/{{item.icon}}"/>
+      <text>{{item.info}}</text>
+    </view>
+  </block>
+</view>
+
